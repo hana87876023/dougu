@@ -21,7 +21,7 @@ export const StickyNav: React.FC<StickyNavProps> = ({
   const { sections, goToSection } = useSectionStore()
   const currentIndex = useCurrentSectionIndex()
   const isTransitioning = useIsTransitioning()
-  const { canNavigateUp, canNavigateDown } = useSectionNavigation()
+  const { hasPrev: canNavigateUp, hasNext: canNavigateDown } = useSectionNavigation()
   
   const [isVisible, setIsVisible] = useState(true)
   const [lastScrollTime, setLastScrollTime] = useState(Date.now())
@@ -185,7 +185,8 @@ export const StickyNav: React.FC<StickyNavProps> = ({
 
 // Scroll indicators (up/down arrows)
 export const ScrollIndicators: React.FC = () => {
-  const { canNavigateUp, canNavigateDown, goToNextSection, goToPrevSection } = useSectionNavigation()
+  const { hasPrev: canNavigateUp, hasNext: canNavigateDown } = useSectionNavigation()
+  const { goToNextSection, goToPrevSection } = useSectionActions()
   const isTransitioning = useIsTransitioning()
 
   return (
