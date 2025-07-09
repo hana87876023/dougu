@@ -58,16 +58,15 @@ export const metadata: Metadata = {
     images: ['/og-image.jpg'],
     creator: '@rototransitions',
   },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-    userScalable: false,
-  },
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#00e6e6' },
-    { media: '(prefers-color-scheme: dark)', color: '#0d0e0a' },
-  ],
+}
+
+// Viewport configuration
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: '#0d0e0a',
 }
 
 // Root layout component
