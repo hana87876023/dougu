@@ -80,7 +80,7 @@ export default function RootLayout({
     <html 
       lang="en" 
       className={`${inter.variable} ${poppins.variable}`}
-      suppressHydrationWarnings
+      suppressHydrationWarning
     >
       <head>
         {/* Preconnect to external domains for performance */}
