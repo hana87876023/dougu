@@ -22,10 +22,6 @@ const config: Config = {
       fontWeight: {
         'semibold': '600',
       },
-      perspective: {
-        '1200': '1200px',
-        '2000': '2000px',
-      },
       animation: {
         'float': 'float 6s ease-in-out infinite',
         'glow': 'glow 2s ease-in-out infinite alternate',
@@ -47,9 +43,6 @@ const config: Config = {
       },
       backdropBlur: {
         'xs': '2px',
-      },
-      transformStyle: {
-        'preserve-3d': 'preserve-3d',
       },
     },
   },

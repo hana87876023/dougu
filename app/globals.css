@@ -71,12 +71,11 @@ body {
 @layer components {
   .section-container {
     @apply min-h-screen flex items-center justify-center relative;
-    @apply preserve-3d backface-hidden;
   }
   
   .glass-card {
-    @apply glass-morphism rounded-xl p-6 transition-all duration-300;
-    @apply hover:translate-y-[-15px] hover:shadow-lg;
+    @apply rounded-xl p-6 transition-all duration-300;
+    @apply hover:-translate-y-4 hover:shadow-lg;
   }
   
   .glass-card:hover {
