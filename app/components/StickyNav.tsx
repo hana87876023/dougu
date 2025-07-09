@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { useSectionStore, useCurrentSectionIndex, useIsTransitioning, useSectionNavigation } from './useSectionStore'
+import { useSectionStore, useCurrentSectionIndex, useIsTransitioning, useSectionNavigation, useSectionActions } from './useSectionStore'
 import { navDotVariants, buttonVariants } from '@/libs/framerConfigs'
 
 // Navigation props
