@@ -1,5 +1,6 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "build",
+  "buildCommand": "cd camping-gear-lp && npm run build",
+  "outputDirectory": "camping-gear-lp/build",
+  "installCommand": "cd camping-gear-lp && npm install",
   "framework": "create-react-app"
 }
