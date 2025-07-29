@@ -1,17 +1,11 @@
 {
-  "builds": [
-    {
-      "src": "camping-gear-lp/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "build"
-      }
+  "functions": {
+    "api/build.js": {
+      "includeFiles": "camping-gear-lp/**"
     }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/camping-gear-lp/$1"
-    }
-  ]
+  },
+  "buildCommand": "cd camping-gear-lp && npm install && npm run build",
+  "outputDirectory": "camping-gear-lp/build",
+  "installCommand": "echo 'Using custom install'",
+  "framework": null
 }
