@@ -1,6 +1,17 @@
 {
-  "buildCommand": "cd camping-gear-lp && npm run build",
-  "outputDirectory": "camping-gear-lp/build",
-  "installCommand": "cd camping-gear-lp && npm install",
-  "framework": "create-react-app"
+  "builds": [
+    {
+      "src": "camping-gear-lp/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/camping-gear-lp/$1"
+    }
+  ]
 }
